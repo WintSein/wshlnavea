@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blogs & Vlogs</title>
+<link rel="icon" type="image/png" href="../image/logo1.png">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<input type="checkbox" id="menu-toggle" aria-hidden="true">
+
+<!-- Sidebar -->
+<div class="sidebar" aria-hidden="true">
+    <ul class="sidebar-nav">
+        <li><a href="../index.html">Home</a></li>
+
+        <li class="sidebar-dropdown-parent">
+            <input type="checkbox" id="info-drop" class="dropdown-check" aria-hidden="true">
+            <label for="info-drop" class="sidebar-dropbtn">Information ▾</label>
+            <ul class="sidebar-dropdown-menu">
+                <li><a href="../index.html#weather">Weather</a></li>
+                <li><a href="map.html#myhistory">History</a></li>
+                <li><a href="map.html#mymap">Map</a></li>
+                <li><a href="map.html#ophrs">Opening Hours</a></li>
+            </ul>
+        </li>
+
+        <li class="sidebar-dropdown-parent">
+            <input type="checkbox" id="community-drop" class="dropdown-check" />
+            <label for="community-drop" class="sidebar-dropbtn">Community ▾</label>
+            <ul class="sidebar-dropdown-menu">
+                <li><a href="news_updates.html">News & Updates</a></li>
+                <li><a href="blogs_vlogs.html">Blogs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedbacks.html">Feedbacks</a></li>
+            </ul>
+        </li>
+
+        <li><a href="donation.html">Donation</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="sign_up.html" class="sidebar-signup-btn">Sign Up</a></li>
+    </ul>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <img src="../image/logo1.png" alt="Park Logo"/>
+    <a href="sign_up.html" class="signup-btn">Sign Up</a>
+    <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation" tabindex="0">
+        <i class="fas fa-bars"></i>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+
+        <li class="dropdown">
+            <a href="map.html" class="dropbtn">Information ▾</a>
+            <div class="dropdown-content">
+                <a href="../index.html#weather">Weather</a>
+                <a href="map.html#myhistory">History</a>
+                <a href="map.html#mymap">Map</a>
+                <a href="map.html#ophrs">Opening Hours</a>
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Community ▾</a>
+            <div class="dropdown-content">
+                <a href="news_updates.html">News & Updates</a>
+                <a href="blogs_vlogs.html">Blogs & Vlogs</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="feedbacks.html">Feedbacks</a>
+            </div>
+        </li>
+
+        <li><a href="donation.html">Donation</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+    </ul>
+</nav>
+
+<body>
+
+<!-- HEADER -->
+<header class="bv-header">
+    <h1>Blogs & Vlogs</h1>
+    <p>Share your thoughts and memories</p>
+</header>
+
+<!-- POSTS CONTAINER -->
+<section class="bv-container" id="postContainer">
+    <div class="blogs">
+
+        <!-- BLOGS -->
+        <div class="blog-card">
+            <p class="timestamp">Nov 28, 2025</p>
+            <h3>A Hidden Gem in Our City</h3>
+            <p>
+                Our local park is truly a hidden gem. Walking through its winding paths,
+                you can hear birds chirping and leaves rustling in the gentle breeze.
+                The greenery is a perfect escape from busy city life.
+            </p>
+        </div>
+
+        <div class="blog-card">
+            <p class="timestamp">Dec 15, 2025</p>
+            <h3>Nature at Our Doorstep</h3>
+            <p>
+                Our local park offers a rare glimpse of nature right in the city.
+                Tall trees, blooming flowers, and streams make it perfect for relaxing.
+                Some areas need better maintenance.
+            </p>
+        </div>
+
+        <div class="blog-card">
+            <p class="timestamp">Dec 14, 2025</p>
+            <h3>A Peaceful Retreat Needing Our Help</h3>
+            <p>
+                The park feels calm and peaceful with birds and rustling leaves.
+                However, broken benches, uneven paths, and limited trash bins
+                show that it needs care from the community.
+            </p>
+        </div>
+
+        <!-- VLOG -->
+        <div class="blog-card">
+            <video src="../image/vlogvid.mp4" controls></video>
+            <p class="timestamp">Dec 8, 2025</p>
+            <h3>A Day at the Park (Vlog)</h3>
+            <p>A short vlog showing the beauty and atmosphere of our local park.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- UPLOAD BUTTON -->
+<div class="bv-upload">
+    <button onclick="openModal()">+</button>
+</div>
+
+<!-- MODAL -->
+<div class="bv-modal" id="modal">
+    <div class="bv-modal-box">
+        <h3>Upload Post</h3>
+
+        <input id="author" placeholder="Your name">
+        <input id="title" placeholder="Title">
+        <input id="media" type="file" accept="image/*,video/*">
+        <textarea id="description" rows="3" placeholder="Description"></textarea>
+
+        <div class="bv-buttons">
+            <button class="upload" onclick="uploadPost()">Upload</button>
+            <button class="cancel" onclick="closeModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="map.html#mymap">Map</a></li>
+                <li><a href="map.html#ophrs">Opening Hours</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="citation.docx" download>View Citations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2025 NAVEA. All Rights Reserved. </p>
+        </div>
+
+        <div class="footer-column contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Taungoo, Bago Region, Myanmar</p>
+            <p><i class="fa-solid fa-phone"></i>+95 674 126 955</p>
+            <p><i class="fa-solid fa-envelope"></i> naveaofficial@gmail.com</p>
+        </div>
+
+    </div>
+</footer>
+
+
+<script>
+function openModal() {
+    document.getElementById("modal").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+    document.getElementById("author").value = "";
+    document.getElementById("title").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("media").value = "";
+}
+
+function uploadPost() {
+    var author = document.getElementById("author").value;
+    var title = document.getElementById("title").value;
+    var description = document.getElementById("description").value;
+    var mediaInput = document.getElementById("media");
+
+    if (author == "" || title == "" || description == "") {
+        alert("Please fill in all fields");
+        return;
+    }
+
+    var mediaHTML = "";
+
+    if (mediaInput.files.length > 0) {
+        var file = mediaInput.files[0];
+        var url = URL.createObjectURL(file);
+
+        if (file.type.indexOf("video") !== -1) {
+            mediaHTML = '<video src="' + url + '" controls></video>';
+        } else {
+            mediaHTML = '<img src="' + url + '">';
+        }
+    }
+
+    var postHTML =
+        '<div class="blog-card">' +
+            mediaHTML +
+            '<p class="timestamp">By ' + author + ' | Just now</p>' +
+            '<h3>' + title + '</h3>' +
+            '<p>' + description + '</p>' +
+        '</div>';
+
+    document.querySelector(".blogs").innerHTML =
+        postHTML + document.querySelector(".blogs").innerHTML;
+
+    closeModal();
+}
+</script>
+
+</body>
+</html>

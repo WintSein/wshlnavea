@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | NAVEA</title>
+    <link rel="icon" type="image/png" href="../image/logo1.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f3d2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            background: #e8f5ee;
+            border-radius: 20px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .left {
+            width: 50%;
+            background: #d9f2e3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .right {
+            width: 50%;
+            padding: 40px;
+            background: #ffffff;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #0f3d2e;
+            font-size: 30px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #0f3d2e;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 8px;
+            border: 1px solid #777;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background: #1b7052;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #155a40;
+        }
+
+        a {
+            color: #1b7052;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="../image/view22.jpg" alt="Park Illustration">
+        </div>
+
+        <div class="right">
+            <h2>Create an Account</h2>
+
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your full name">
+
+            <label>Username</label>
+            <input type="text" placeholder="Choose a username">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" placeholder="Create a password">
+
+            <label>Confirm Password</label>
+            <input type="password" placeholder="Confirm your password">
+
+            <button>Sign Up</button>
+
+            <p class="footer">Already have an account? <a href="log_in.html">Login Here</a></p>
+            <p class="footer">Back to <a href="../index.html">Home</a></p>
+            <p class="footer">Terms and Services</p>
+        </div>
+    </div>
+</body>
+</html>

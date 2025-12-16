@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | NAVEA</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="image/logo1.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <input type="checkbox" id="menu-toggle" aria-hidden="true">
+    
+    <div class="sidebar" aria-hidden="true">
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="sidebar-dropdown-parent">
+                <input type="checkbox" id="info-drop" class="dropdown-check" aria-hidden="true">
+                <label for="info-drop" class="sidebar-dropbtn">Information ▾</label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="pages/map.html">History</a></li>
+                    <li><a href="pages/map.html">Map</a></li>
+                    <li><a href="pages/map.html">Opening Hours</a></li>
+                </ul>
+            </li>
+
+
+            <li class="sidebar-dropdown-parent">
+                <input type="checkbox" id="community-drop" class="dropdown-check" />
+                <label for="community-drop" class="sidebar-dropbtn">Community ▾</label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="pages/news_updates.html">News & Updates</a></li>
+                    <li><a href="pages/blogs_vlogs.html">Blogs</a></li>
+                    <li><a href="pages/gallery.html">Gallery</a></li>
+                    <li><a href="pages/feedbacks.html">Feedbacks</a></li>
+                </ul>
+            </li>
+
+            <li><a href="pages/donation.html">Donation</a></li>
+            <li><a href="pages/contact_us.html">Contact</a></li>
+            <li><a href="pages/about_us.html">About Us</a></li>
+            <li><a href="pages/sign_up.html" class="sidebar-signup-btn">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar">
+        <img src="image/logo1.png" alt="Park Logo"/>
+        
+        <a href="pages/sign_up.html" class="signup-btn">Sign Up</a>
+
+        <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="pages/map.html" class="dropbtn">Information ▾</a>
+                <div class="dropdown-content">
+                    <a href="#weather">Weather</a>
+                    <a href="pages/map.html#myhistory">History</a>
+                    <a href="pages/map.html#mymap">Map</a>
+                    <a href="pages/map.html#ophrs">Opening Hours</a>
+                </div>
+            </li>
+
+            
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Community ▾</a>
+                <div class="dropdown-content">
+                    <a href="pages/news_updates.html">News & Updates</a>
+                    <a href="pages/blogs_vlogs.html">Blogs & Vlogs</a>
+                    <a href="pages/events.html">Events</a>
+                    <a href="pages/gallery.html">Gallery</a>
+                    <a href="pages/feedbacks.html">Feedbacks</a>
+                </div>
+            </li>
+
+            <li><a href="pages/donation.html">Donation</a></li>
+            <li><a href="pages/contact_us.html">Contact</a></li>
+            <li><a href="pages/about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Explore the beauty of the NAVEA Park</h1>
+            <p>A peaceful place for nature lovers and families alike.</p>
+            <a href="pages/news_updates.html" class="hero-btn">Discover More</a>
+        </div>
+    </section>
+
+    <section class="eq-section">
+    <div class="eq-content">
+        <h2>Why NAVEA Matters</h2>
+        <p>
+            NAVEA is designed to connect the community with NAVEA Park, providing easy access to information, 
+            updates, and events. By keeping visitors informed, we encourage responsible park usage, increase participation 
+            in environmental activities, and help preserve the natural beauty of the park for future generations. 
+            From checking weather conditions before a visit to signing up for cleanup events, this website empowers 
+            everyone to take part in protecting and enjoying our green spaces.
+        </p>
+    </div>
+</section>
+
+
+    <section class="main-features">
+        <div class="card-container">
+            <div class="card">
+                <img src="image/tree1.jpg" alt="Park Info">
+                <h2>Park Information</h2>
+                <p>Learn about the park’s history, facilities, and natural features.</p>
+                <a href="pages/map.html" class="card-link">Explore Now →</a>
+            </div>
+
+            <div class="card">
+                <img src="image/tree2.jpg" alt="Updates">
+                <h2>Latest Updates</h2>
+                <p>Recent events, improvements, and important announcements.</p>
+                <a href="pages/news_updates.html" class="card-link">View News →</a>
+            </div>
+
+            <div class="card">
+                <img src="image/tree3.jpg" alt="Weather">
+                <h2>Weather Preview</h2>
+                <p>See today’s weather forecast before planning your visit.</p>
+                <a href="#weather" class="card-link">Check Forecast →</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="event-cta-section">
+        <div class="cta-content">
+            <h2>Join Our Community Activities!</h2>
+            <p>From guided nature walks to spending time with your loved ones, there's always something to do in the park.</p>
+            <a href="pages/events.html" class="cta-btn">View Full Event Calendar</a>
+        </div>
+    </section>
+
+    <main id="weather">
+    <div class="weather-page-container">
+        <h1>Today's Weather for NAVEA Park</h1>
+        <p class="intro-text">Current conditions in Taungoo as of 9:00 AM, December 17, 2025 (Local Time). This information is manually updated.</p>
+
+        <div class="weather-report-card">
+            
+            <div class="current-temp-box">
+                <span class="current-temp">27°C</span>
+                <span class="condition">Mostly sunny</span>
+            </div>
+
+            <table class="weather-details-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Today's Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-temperature-three-quarters"></i> Feels Like</td>
+                        <td>27°C</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-sun"></i> Daytime High</td>
+                        <td>26°C</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-moon"></i> Nighttime Low</td>
+                        <td>22°C</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-wind"></i> Wind</td>
+                        <td>4 mph (N)</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-tint"></i> Humidity</td>
+                        <td>49%</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-cloud-rain"></i> Chance of Rain</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-sun-haze"></i> UV Index</td>
+                        <td>7 (high)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <section class="weather-notes">
+            <h2>Park Weather Notes & Safety Tips</h2>
+            <div class="tip-box">
+                <h3><i class="fas fa-umbrella"></i> Rain Policy</h3>
+                <p>Most trails remain open in light rain. However, the Bamboo Forest Trail and Upper Lagoon Walk may close temporarily during heavy rainfall due to slippery surfaces and flash flood risks.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3><i class="fas fa-sun"></i> High Heat/UV Warning</h3>
+                <p>During the hot season (March–May), temperatures can exceed 38°C (100°F). Please carry extra water, wear a hat, and plan strenuous activities for the early morning or late afternoon.</p>
+            </div>
+            
+            <div class="tip-box">
+                <h3><i class="fas fa-wind"></i> Wind Advisory</h3>
+                <p>If wind speeds exceed 30 mph, the boat rentals will be suspended for visitor safety. Please check with the Visitor Center.</p>
+            </div>
+        </section>
+        
+    </div>
+</main>
+
+
+    <section class="info-section">
+        <h2>Announcement</h2>
+        <div class="content-box">
+            <p>Join us this Saturday for the Annual Winter Cleanup! Meet at the main entrance at 8 AM. Gloves and bags provided. <a href="pages/sign_up.html">Learn more and sign up!</a></p>
+        </div>
+    </section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="pages/map.html#mymap">Map</a></li>
+                <li><a href="pages/map.html#ophrs">Opening Hours</a></li>
+                <li><a href="pages/donation.html">Donation</a></li>
+                <li><a href="pages/contact_us.html">Contact Us</a></li>
+                <li><a href="pages/citation.docx" download>View Citations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2025 NAVEA. All Rights Reserved. </p>
+        </div>
+
+        <div class="footer-column contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Taungoo, Bago Region, Myanmar</p>
+            <p><i class="fa-solid fa-phone"></i>+95 674 126 955</p>
+            <p><i class="fa-solid fa-envelope"></i> naveaofficial@gmail.com</p>
+        </div>
+
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Events Calendar | NAVEA</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="../image/logo1.png">
+</head>
+
+<body>
+    <input type="checkbox" id="menu-toggle" aria-hidden="true">
+    
+    <div class="sidebar" aria-hidden="true">
+        <ul class="sidebar-nav">
+            <li><a href="../index.html">Home</a></li>
+
+            <li class="sidebar-dropdown-parent">
+                <input type="checkbox" id="info-drop" class="dropdown-check" aria-hidden="true">
+                <label for="info-drop" class="sidebar-dropbtn">Information ▾</label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="map.html">History</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="map.html">Opening Hours</a></li>
+                </ul>
+            </li>
+
+
+            <li class="sidebar-dropdown-parent">
+                <input type="checkbox" id="community-drop" class="dropdown-check" />
+                <label for="community-drop" class="sidebar-dropbtn">Community ▾</label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="news_updates.html">News & Updates</a></li>
+                    <li><a href="blogs_vlogs.html">Blogs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="feedbacks.html">Feedbacks</a></li>
+                </ul>
+            </li>
+
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="sign_up.html" class="sidebar-signup-btn">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar">
+        <img src="../image/logo1.png" alt="Park Logo"/>
+        
+        <a href="sign_up.html" class="signup-btn">Sign Up</a>
+
+        <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="map.html" class="dropbtn">Information ▾</a>
+                <div class="dropdown-content">
+                    <a href="../index.html#weather">Weather</a>
+                    <a href="history.html">History</a>
+                    <a href="map.html">Map</a>
+                    <a href="opening_hours.html">Opening Hours</a>
+                </div>
+            </li>
+
+            
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Community ▾</a>
+                <div class="dropdown-content">
+                    <a href="news_updates.html">News & Updates</a>
+                    <a href="blogs_vlogs.html">Blogs & Vlogs</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="feedbacks.html">Feedbacks</a>
+                </div>
+            </li>
+
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+
+<header class="events-header">
+    <h1>Community Park Events</h1>
+    <p>Click on a date to see activities happening in the park.</p>
+</header>
+
+<section class="calendar-container">
+
+    <!-- CALENDAR -->
+    <div class="calendar">
+        <div class="calendar-header">
+            <h2>December 2025</h2>
+        </div>
+
+        <div class="calendar-grid">
+            <div class="day-name">Sun</div>
+            <div class="day-name">Mon</div>
+            <div class="day-name">Tue</div>
+            <div class="day-name">Wed</div>
+            <div class="day-name">Thu</div>
+            <div class="day-name">Fri</div>
+            <div class="day-name">Sat</div>
+
+            <div class="day empty"></div>
+            <div class="day">1</div>
+
+            <div class="day event"
+                data-event=" Party Pop Fundraiser
+Time: 6:30 PM – 10:00 PM
+Location: Park Pavilion
+Description: A fun evening event to raise money for the park. Enjoy music, games, food stalls, and social activities. All proceeds go toward park revitalization."
+                data-img="../image/view17.jpg">2</div>
+
+            <div class="day">3</div>
+            <div class="day">4</div>
+
+            <div class="day event"
+                data-event=" Revitalization Recycled Sale
+Time: 10:00 AM – 3:00 PM
+Location: Near Welcome Center
+Description: A community sale featuring used and recycled items such as plastic-bottle planters and reusable tote bags. All profits support park improvement projects."
+                data-img="../image/view18.jpg">5</div>
+
+            <div class="day">6</div>
+
+            <div class="day event"
+                data-event=" Happy Park Weekend
+Time: All Day
+Location: Various Park Spots
+Description: A relaxing, self-guided experience where visitors explore the park’s natural beauty and enjoy peaceful outdoor spaces."
+                data-img="../image/view16.jpg">7</div>
+
+            <div class="day event"
+                data-event=" Green Adventure Jam
+Time: 1:00 PM – 4:00 PM
+Location: Oak Tree Grove
+Description: Mini games and environmental activities that teach sustainability while having fun. Suitable for all ages."
+                data-img="../image/view19.jpg">8</div>
+
+            <div class="day">9</div>
+
+            <div class="day event"
+                data-event=" Family Fun Fiesta
+Time: 4:00 PM – 7:00 PM
+Location: Central Field
+Description: Families enjoy games, creative activities, and attractions together in a fun, friendly park environment."
+                data-img="../image/view17.jpg">10</div>
+
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+        </div>
+    </div>
+
+    <!-- EVENT DETAILS -->
+    <div class="event-info">
+        <h3>Event Details</h3>
+
+        <img id="event-image" src="../image/view17.jpg" alt="Event image">
+
+        <p id="event-details" aria-live="polite">
+            Click a highlighted date to see the event details.
+        </p>
+    </div>
+
+    <!-- RECURRING EVENTS -->
+    <div class="recurring-events">
+        <h3> Ongoing Park Programs</h3>
+
+        <div class="recurring-event-card">
+            <i class="fas fa-glass-cheers event-icon"></i>
+            <div>
+                <h4>Party Pop Fundraiser</h4>
+                <p>Fundraising nights to support park revitalization.</p>
+            </div>
+        </div>
+
+        <div class="recurring-event-card">
+            <i class="fas fa-recycle event-icon"></i>
+            <div>
+                <h4>Revitalization Recycled Sale</h4>
+                <p>Eco-friendly sales promoting reuse and sustainability.</p>
+            </div>
+        </div>
+
+        <div class="recurring-event-card">
+            <i class="fas fa-leaf event-icon"></i>
+            <div>
+                <h4>Happy Park Weekend</h4>
+                <p>Relax and explore nature at your own pace.</p>
+            </div>
+        </div>
+
+        <div class="recurring-event-card">
+            <i class="fas fa-gamepad event-icon"></i>
+            <div>
+                <h4>Green Adventure Jam</h4>
+                <p>Learn about the environment through fun activities.</p>
+            </div>
+        </div>
+
+        <div class="recurring-event-card">
+            <i class="fas fa-users event-icon"></i>
+            <div>
+                <h4>Family Fun Fiesta</h4>
+                <p>A special day of fun for families and children.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="map.html#mymap">Map</a></li>
+                <li><a href="map.html#ophrs">Opening Hours</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="citation.docx" download>View Citations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2025 NAVEA. All Rights Reserved. </p>
+        </div>
+
+        <div class="footer-column contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Taungoo, Bago Region, Myanmar</p>
+            <p><i class="fa-solid fa-phone"></i>+95 674 126 955</p>
+            <p><i class="fa-solid fa-envelope"></i> naveaofficial@gmail.com</p>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+const days = document.querySelectorAll(".day.event");
+const info = document.getElementById("event-details");
+const img = document.getElementById("event-image");
+let selectedDay = null;
+
+days.forEach(day => {
+    day.addEventListener("click", () => {
+        if (selectedDay) selectedDay.classList.remove("selected");
+
+        info.textContent = day.dataset.event;
+        img.src = day.dataset.img;
+
+        day.classList.add("selected");
+        selectedDay = day;
+    });
+});
+
+if (days.length > 0) days[0].click();
+</script>
+
+</body>
+</html>

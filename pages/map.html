@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Information | NAVEA</title>
+    
+       <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../image/logo1.png">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="map-body-bg">
+     <input type="checkbox" id="menu-toggle" aria-hidden="true">
+    
+    <div class="sidebar" aria-hidden="true">
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+
+            <li class="sidebar-dropdown-parent">
+                <input type="checkbox" id="info-drop" class="dropdown-check" aria-hidden="true">
+                <label for="info-drop" class="sidebar-dropbtn">Information ▾</label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="#weather">Weather</a></li>
+                    <li><a href="map.html">History</a></li>
+                    <li><a href="map.html">Map</a></li>
+                    <li><a href="map.html">Opening Hours</a></li>
+                </ul>
+            </li>
+
+
+            <li class="sidebar-dropdown-parent">
+                <input type="checkbox" id="community-drop" class="dropdown-check" />
+                <label for="community-drop" class="sidebar-dropbtn">Community ▾</label>
+                <ul class="sidebar-dropdown-menu">
+                    <li><a href="news_updates.html">News & Updates</a></li>
+                    <li><a href="blogs_vlogs.html">Blogs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="feedbacks.html">Feedbacks</a></li>
+                </ul>
+            </li>
+
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="sign_up.html" class="sidebar-signup-btn">Sign Up</a></li>
+        </ul>
+    </div>
+
+    <nav class="navbar">
+        <img src="../image/logo1.png" alt="Park Logo"/>
+        
+        <a href="sign_up.html" class="signup-btn">Sign Up</a>
+
+        <label for="menu-toggle" class="menu-btn" aria-label="Toggle navigation" tabindex="0">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+
+            <li class="dropdown">
+                <a href="map.html" class="dropbtn">Information ▾</a>
+                <div class="dropdown-content">
+                    <a href="../index.html#weather">Weather</a>
+                    <a href="#myhistory">History</a>
+                    <a href="#mymap">Map</a>
+                    <a href="#ophrs">Opening Hours</a>
+                </div>
+            </li>
+
+            
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Community ▾</a>
+                <div class="dropdown-content">
+                    <a href="news_updates.html">News & Updates</a>
+                    <a href="blogs_vlogs.html">Blogs & Vlogs</a>
+                    <a href="events.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="feedbacks.html">Feedbacks</a>
+                </div>
+            </li>
+
+            <li><a href="donation.html">Donation</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- history  -->
+
+    
+        <section class="history-header" style="margin-top: 50px;" id="myhistory">
+            <h1>NAVEA Park: A Historical Overview</h1>
+            <p>From its 19th-century origins as a vital royal reservoir to its current status as a central public green space, explore the defining eras of the park's development.</p>
+        </section>
+
+        <section class="historical-facts">
+            <div class="fact-card">
+                <i class="fas fa-crown"></i>
+                <h3>Royal City Foundation</h3>
+                <p>The history of this great water is inseparable from the city of Taungoo itself, established circa <b>1510 AD</b>. The lake was conceived as a <b>Royal Reservoir</b>.</p>
+            </div>
+            <div class="fact-card">
+                <i class="fas fa-water"></i>
+                <h3>Great Royal Lake</h3>
+                <p>The name <b>"NAVEA"</b> literally translates to <b>"Great Royal Lake"</b> in the local language, reflecting its supreme status and purpose—a treasure for the royalty.</p>
+            </div>
+            <div class="fact-card">
+                <i class="fas fa-tree"></i>
+                <h3>Public Stewardship</h3>
+                <p>In the early 20th century, the lake's purpose changed forever. It transitioned from a royal utility to a <b>managed public space</b>, welcoming all citizens.</p>
+            </div>
+        </section>
+        
+        <hr class="modern-divider">
+
+        <section class="detailed-history">
+            <h2>A Deeper Look: The Transformation of NAVEA</h2>
+            
+            <div class="history-feature feature-left">
+                <div class="feature-media">
+                    <img src="../image/history2.jpg" alt="Black and white photo of an old bridge and trees at the park.">
+                    <p class="caption">An early 20th-century view, showing the park's natural, undeveloped charm.</p>
+                </div>
+                <div class="feature-text">
+                    <h3>From Royal Water Source to Public Land</h3>
+                    <p>Originally conceived in the mid-19th century, NAVEA was not a park but a critical part of the Taungoo kingdom’s infrastructure. It served as a massive, protected reservoir, essential for both drinking water and managing local irrigation. The name "Kan Taw Gyi" itself—meaning <b>Great Royal Lake</b>—speaks to its high status and restricted access during the royal era.</p>
+                    <p>It was only after administrative changes that the land was dedicated to the public, transforming from a purely utilitarian site into a place of <b>leisure and community gathering</b>. Early development focused on simple walking trails, allowing citizens to enjoy the natural beauty previously reserved for royalty.</p>
+                </div>
+            </div>
+            
+            <div class="history-feature feature-right">
+                <div class="feature-text">
+                    <h3>Building the Icons: The Pagoda and Modern Bridges</h3>
+                    <p>The 1970s marked the most ambitious construction period. Following Myanmar's post-independence push for public spaces, funds were allocated to transform the area into a major urban park. The primary goal was the creation of the <b>iconic lakeside pagoda</b> (visible in image/history1.jpg during construction), which instantly became the spiritual and visual centerpiece of the park.</p>
+                    <p>Alongside the pagoda, formal pathways, modern recreational bridges, and landscaped gardens were introduced, replacing simple trails with infrastructure designed for large visitor volumes. This expansion cemented NAVEA's status as a key regional attraction, blending natural beauty with cultural landmarks.</p>
+                </div>
+                <div class="feature-media">
+                    <img src="../image/history1.jpg" alt="Construction photo of the main lakeside pagoda being built.">
+                    <p class="caption">The construction of the park's main religious monument in the 1970s.</p>
+                </div>
+            </div>
+            
+            <div class="history-feature feature-left">
+                <div class="feature-media">
+                    <img src="../image/history6.jpg" alt="A ceremony being held by the lake, showing community involvement.">
+                    <p class="caption">The park serves as a location for important religious and cultural ceremonies.</p>
+                </div>
+                <div class="feature-text">
+                    <h3>A Center for Culture and Community</h3>
+                    <p>Today, NAVEA is more than just a green space; it is the <b>cultural heart of Taungoo</b>. The park’s large open spaces and its scenic lake setting make it the ideal venue for annual festivals, community celebrations, and important ceremonies, such as water festivals or traditional boat processions. These events emphasize the park’s role as a place for shared heritage and collective memory.</p>
+                    <p>Ongoing initiatives, including ecological preservation and the development of new community facilities, ensure the park continues to evolve while honoring its long history as a vital resource for the Bago Region.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr style="max-width: 1000px; margin: 5rem auto 4rem; border: 0; border-top: 1px solid #ccc;">
+
+        
+
+    <!-- map section  -->
+    <main id="mymap">
+        <div class="map-container">
+            <h1>NAVEA Location Map</h1>
+            <div class="address-info">
+                Address: NAVEA, Taungoo, Myanmar (Burma)
+            </div>
+            
+            <iframe 
+                class="map-embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15252.338517228965!2d96.44754752538965!3d18.94091462057996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c5e7514300302b%3A0xc3f16d6168936f32!2sKan%20Taw%20Gyi%20Park!5e0!3m2!1sen!2smm!4v1709623862217!5m2!1sen!2smm"
+                width="100%" 
+                height="450" 
+                style="border:0;"
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </main>
+
+    <!-- opening hours  -->
+      <main id="ophrs">
+        <section class="hours-container">
+            
+            <h2>NAVEA Park Opening Hours</h2>
+            
+            <table class="hours-table">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="day">Monday</td>
+                        <td class="time-open">4:00 AM – 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Tuesday</td>
+                        <td class="time-open">4:00 AM – 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Wednesday</td>
+                        <td class="time-open">4:00 AM – 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Thursday</td>
+                        <td class="time-open">4:00 AM – 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Friday</td>
+                        <td class="time-open">4:00 AM – 6:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Saturday</td>
+                        <td class="time-open">4:00 AM – 6:30 PM</td>
+                    </tr>
+                    <tr>
+                        <td class="day">Sunday</td>
+                        <td class="time-open">4:00 AM – 6:30 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="hours-note">
+                <p>Note on Access: The main pathways remain accessible until 7:00 PM for visitors already inside the park, but all facilities (boat rentals, refreshment stalls) close promptly at the listed closing time.</p>
+                <p>For special holiday hours or maintenance closures, please check our <a href="news_updates.html">News & Updates</a> page.</p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="opening_hours.html">Opening Hours</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="citation.docx" download>View Citations</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <p class="copyright">© 2025 NAVEA. All Rights Reserved. </p>
+        </div>
+
+        <div class="footer-column contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fa-solid fa-map-marker-alt"></i> Taungoo, Bago Region, Myanmar</p>
+            <p><i class="fa-solid fa-phone"></i>+95 674 126 955</p>
+            <p><i class="fa-solid fa-envelope"></i> naveaofficial@gmail.com</p>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
